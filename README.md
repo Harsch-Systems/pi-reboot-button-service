@@ -33,7 +33,7 @@ Description=Reboot if GPIO button betwwen GND and BCM 17 is held for 5 seconds
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/env python3 /home/pi/reboot_button.py
+ExecStart=/usr/bin/env python3 /usr/local/bin/reboot_button.py
 
 [Install]
 WantedBy=multi-user.target
