@@ -1,6 +1,8 @@
 # pi-reboot-button-service
 Setup a systemd service that reboots the pi when a push button is pressed and held for some interval
 
+based on [this](https://gpiozero.readthedocs.io/en/stable/recipes.html#shutdown-button) gpiozero example.
+
 Assuming you already have python3 installed
 
 ## Install pigpiozero
@@ -29,7 +31,7 @@ Connect a momentary push button between a Ground Pin (e.g. Pi Header Pin 9) and 
 ## Add a systemd service file to /etc/systemd/system/reboot-button.service
 ```
 [Unit]
-Description=Reboot if GPIO button betwwen GND and BCM 17 is held for 5 seconds
+Description=Reboot if GPIO button between GND and BCM 17 is held for 5 seconds
 
 [Service]
 Type=simple
